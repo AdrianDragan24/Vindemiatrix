@@ -1,0 +1,48 @@
+nav #ch-meniu:checked + ul.meniu {
+  display: block;
+  animation: aparitie;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+nav #hamburger {
+  display: block;
+}
+nav #hamburger img {
+  height: 2rem;
+}
+nav ul.meniu {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+nav ul.meniu li {
+  --latime_buton: 100%;
+  line-height: var(--inaltime_buton);
+}
+nav ul.meniu li div, nav ul.meniu li a {
+  height: 100%;
+}
+nav ul.meniu li:hover div.op::after {
+  display: none;
+}
+nav ul.meniu > li:hover > a, nav ul.meniu > li:hover div {
+  color: white;
+  background-color: var(--culoare_inchisa);
+}
+
+@keyframes aparitie {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+    rotate: -90deg;
+  }
+  100% {
+    rotate: 0;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=nav700.css.map */

@@ -1,0 +1,27 @@
+{
+  "name": "vindemiatrix",
+  "version": "1.0.0",
+  "description": "Vindemiatrix este un magazin de instrumente astronomice, precum telescoape, monturi sau filtre, potrivite atât începătorilor cât și astronomilor experimentați.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "astronomie",
+    "telescop",
+    "montură",
+    "magazin",
+    "instrumente",
+    "astronomice",
+    "Vindemiatrix",
+    "observatii"
+  ],
+  "author": "Dragan Adrian Stefan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "sharp": "^0.33.5"
+  }
+}

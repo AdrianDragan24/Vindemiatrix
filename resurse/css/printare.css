@@ -1,0 +1,78 @@
+#watermark,#absolut{
+    display:none;
+}
+
+@media print {
+
+img, iframe, .container-iframe, #link-top, nav{
+    display: none;
+}
+
+#absolut{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top:10px;
+    width:20px;
+    height:20px;
+    width: 80%;
+    border: 2px dotted black;
+}
+
+h1{
+    page-break-after: always;
+    margin-top: 50%;
+    text-align:center;
+    text-decoration: underline;
+    font-size: 2.5em;
+}
+#gridpag
+{
+    display: block;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+    #watermark
+    {
+        display: block;
+        position: fixed;/*apare pe toate paginile*/
+        bottom:0;
+        right:0;
+    }
+    #watermark::after{
+        
+        opacity:0.65;
+        padding:5px;
+        display: block;
+        border: 2px double black;
+        height: 2cm;
+        width: 100px;
+        content:"Drăgan Adrian Ștefan";
+    }
+
+footer{
+    page-break-before: always;
+}
+}
+
+@page {
+    size: A4 portrait;
+    margin-bottom:2cm;
+    margin-top:2cm;
+    counter-increment: page;
+        
+}
+@page:left{
+
+    margin-left:2.5cm;
+    margin-right:0.5cm;
+}
+@page:right{
+    margin-right:2.5cm;
+    margin-left:0.5cm;
+}

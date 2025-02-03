@@ -1,0 +1,23 @@
+WEBVTT
+
+STYLE
+::cue{
+	color:rgb(0, 43, 104);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+00:00.000 --> 00:03.000 position:50% align:center
+O cometa e un corp ceresc foarte special.
+
+00:04.000 --> 00:08.000
+Are o coadă luminoasă îndreptată în partea opusă Soarelui.
+
+00:09.000 --> 00:15.000
+Are traiectorie eliptica sau hiperbolică.
+
+00:15.000 --> 00:20.000
+Majoritatea sunt vizibile la intervale foarte mari de timp.
+
+00:20.500 --> 00:29.000
+Unele nu se mai întorc vreodată!
+

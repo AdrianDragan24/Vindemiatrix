@@ -1,0 +1,14 @@
+<section id="Galerie">
+    <h2>Galerie</h2>
+    <div id="galerie_statica">
+        <% for (let i = 0; i < Math.trunc(imagini.length / 3) * 3; i++) { %>
+        <figure>
+            <picture>
+                <source srcset="<%= imagini[i].cale_fisier_mediu %>" media="(max-width: 1000px)" />
+                <img src="<%= imagini[i].cale_relativa %>" title="<%= imagini[i].descriere %>" alt="<%= imagini[i].nume %>" />
+            </picture>
+            <figcaption><%= imagini[i].descriere %></figcaption>
+        </figure>   
+        <% } %>
+    </div>
+</section>

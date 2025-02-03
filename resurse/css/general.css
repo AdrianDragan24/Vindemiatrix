@@ -1,0 +1,264 @@
+html{
+    --dimensiunetxt: 18px;
+    font-size: var(--dimensiunetxt);
+    transition: all 0.2s linear;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+
+video {
+    width: 100%;
+    max-width: 500px;
+    min-width: 50px;
+  }
+
+body{
+    --culoare1: #a893f5cc;
+    --culoare2: #495df599;
+    --culoare3: #a849f568;
+    --culoare4: #408bf588;
+    --culoare5: #38D5F5;
+    --culoare6: #408bf5;
+    --culoare7: #a849f5e2;
+    background-color: var(--culoare5);
+    --spatiere: 25px;
+    padding-left: var(--spatiere);
+    padding-right: var(--spatiere);
+}
+
+#gridpag{
+    display: grid;
+    grid-template-areas: "zdate_firma zdate_firma zdate_firma zdate_firma"
+                        "zcalendar znoutati znoutati ztabel"
+                        "zastronomie zastronomie zastronomie zastronomie"
+                        "zdatesite zdatesite zlista_utilizatori zdate_utilizatori";
+    grid-gap: 10px;
+}
+
+#gridpag > *{
+    margin: 0;
+    padding: 20px;
+    border: 3px solid var(--culoare6);
+    border-radius: 6px;
+}
+
+#date_firma{
+    grid-area: zdate_firma;
+    background-color: var(--culoare4);
+}
+#astronomie{
+    grid-area: zastronomie;
+    background-color: var(--culoare3);
+}
+#noutati_scurt{
+    grid-area: znoutati;
+    background-color: var(--culoare1);
+}
+#calendar{
+    grid-area: zcalendar;
+    background-color: var(--culoare2);
+}
+#tabel{
+    grid-area: ztabel;
+    background-color: var(--culoare2);
+}
+#lista_utilizatori{
+    grid-area: zlista_utilizatori;
+    background-color: var(--culoare4);
+}
+#date_utilizatori{
+    grid-area: zdate_utilizatori;
+    background-color: var(--culoare1);
+}
+#date_site{
+    grid-area: zdatesite;
+    background-color: var(--culoare2);
+}
+
+.foto{
+    width: 40%;
+    min-width: 250px;
+    max-width: 700px;
+}
+#titlul{
+    font-family: "Saira Stencil One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#tabel table{
+    caption-side: bottom;
+    background-color: var(--culoare5);
+    --spatiucel: 2px;
+    border-spacing: var(--spatiucel);
+}
+
+#tabel tbody tr:nth-child(2n){
+    background-color: var(--culoare3);
+}
+#tabel tbody tr:nth-child(2n+1){
+    background-color: var(--culoare1);
+}
+
+#tabel th, #tabel td {
+    padding: 3px;
+    text-align: center;
+    border: 1px solid var(--culoare6);
+  }
+
+#tabel *{
+    transition: all 0.4s linear;
+}
+
+#tabel tbody tr:hover, #tabel tfoot tr:hover{
+    background-color: var(--culoare6);
+}
+
+.taburi-iframe a{
+    width: 150px;
+    height: 40px;
+    background-color: var(--culoare5);
+    border: 2px solid var(--culoare7);
+    text-align: center;
+    text-decoration: none;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    line-height: 40px;
+    transition: all 0.5s linear;
+}
+
+.container-iframe{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 760px;
+    justify-content: left;
+}
+
+.taburi-iframe{
+    display: flex;
+    flex-direction: column;
+}
+
+.taburi-iframe a:hover{
+    width: 200px;
+    background-color: var(--culoare1);
+}
+
+
+#link-top{
+    position:fixed;
+    bottom: 1.5em;
+    opacity:0.5;
+    right: 1em;
+    width:3rem;
+    box-sizing: border-box;
+    height:3rem;
+    line-height:3rem;
+    text-align:center;
+    border:5px solid var(--culoare2);
+    background: rgb(220,220,220);
+    rotate: 45deg;
+    transition: all 0.5s linear;
+}
+#link-top:hover{
+    opacity:1;
+    background-color: var(--culoare1);
+}
+#link-top:hover::after{
+    content: "Sus!";
+    display: inline-block;
+    color: black;
+    transform: rotate(-45deg);
+}
+#triunghi{
+    transition: all 0.5s linear;
+    height:0px;
+    width:0;
+    display:inline-block;
+    border-bottom:1.5rem solid grey;
+    border-left:1rem solid transparent;
+    border-right:1rem solid transparent;
+    border-radius: 50%;
+    rotate: -45deg;
+    transform: translateX(-5%);
+}
+  
+#link-top:hover #triunghi{
+      border-bottom:1.5rem solid var(--culoare7);
+}
+
+mi{
+    font-weight: bold;
+}
+
+mn{
+    font-style: italic;
+}
+
+#diametru{
+    text-shadow: rgba(0, 0, 0, 0.6) 1.5px 1.5px;
+}
+
+
+a:hover{
+    color: var(--culoare3);
+}
+
+a:active{
+    border:2px solid var(--culoare7);
+}
+
+main a{
+    background-image: radial-gradient( rgba(0, 0, 255, 0.512) 0%, rgba(0, 0, 255, 0.512) 40%, transparent 80%, transparent 100%);
+    background-position: center;
+    background-size: 0;
+    transition: all 0.5s linear;
+    background-repeat: no-repeat;
+}
+
+main a:hover{
+    background-size: 100%;
+}
+
+a[href^="https"]::before{
+    content: "\2BB3";
+    font-size: 1.5 em;
+    color:var(--culoare7);
+}
+
+a[href^="https"]:hover::before{
+    content: "\2BB3";
+    font-size: 1.5 em;
+    color:var(--culoare5);
+}
+
+#galerie_statica{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    counter-reset: poza 0;
+  }
+
+#galerie_statica figcaption::before{
+    content: counter(poza, upper-alpha)". ";
+    counter-increment: poza;
+}
+#galerie_statica img {
+    border: 1px solid;
+    transition: all 0.7s ease;
+}
+
+#galerie_statica img:hover {
+    border-radius: 60px;
+    rotate: 360deg;
+    transform: scale(1.5);
+}

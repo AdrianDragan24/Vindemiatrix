@@ -1,0 +1,52 @@
+html{
+    --dimensiunetxt: 16px;
+}
+
+body{
+    --spatiere: 15px;
+}
+
+#tabel table{
+    --spatiucel: 1px;
+}
+
+
+#tabel th, #tabel td {
+    padding: 2px;
+  }
+  
+
+#gridpag{
+    grid-template-areas: "zdate_firma zdate_firma "
+                        "zcalendar ztabel"
+                        "znoutati znoutati"
+                        "zastronomie zastronomie"
+                        "zdatesite zdatesite"
+                        "zlista_utilizatori zdate_utilizatori";
+    grid-gap: 5px;
+}
+
+#galerie_statica{
+    display: grid;
+    grid-gap: 5px;
+}
+
+
+#galerie_statica > figure:nth-child(3n+1)
+{
+    grid-column: 1 / span 2;
+}
+
+
+#galerie_statica > figure:nth-child(3n+2)
+{
+    grid-column: 3 / span 2;
+}
+
+
+
+#galerie_statica > figure:nth-child(3n)
+{
+    grid-column: 2 / span 2;
+}
+

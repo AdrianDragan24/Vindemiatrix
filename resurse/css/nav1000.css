@@ -1,0 +1,13 @@
+nav ul.meniu {
+  --latime_buton: 160px;
+  --inaltime_buton: 25px;
+  --linie: 170px;
+}
+nav ul.meniu div.icon {
+  display: block;
+}
+nav ul.meniu div#home {
+  display: none;
+}
+
+/*# sourceMappingURL=nav1000.css.map */

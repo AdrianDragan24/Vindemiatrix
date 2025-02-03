@@ -1,0 +1,138 @@
+{
+    "cale_galerie":"resurse/ico/galerie",
+    "imagini": 
+    [
+    {
+        "cale_relativa":"1.jpg",
+        "nume":"telescop refractor",
+        "descriere":"telescop refractor cu un astru",
+        "timp":"noapte"
+    },
+    {
+        "cale_relativa":"2.jpg",
+        "nume":"binoclu",
+        "descriere":"observarea lunii cu binoclul",
+        "timp":"noapte"
+    },
+    {
+        "cale_relativa":"3.jpg",
+        "nume":"telescop cu cautator",
+        "descriere":"telescop de mici dimensiuni, portabil",
+        "timp":"noapte"
+    },
+    {
+        "cale_relativa":"4.jpg",
+        "nume":"pregatire pentru observatii",
+        "descriere":"telescop cu montura ecuatoriala pe fundalul noptii",
+        "timp":"noapte"
+    },   
+    {
+        "cale_relativa":"5.jpg",
+        "nume":"Jupiter",
+        "descriere":"Jupiter prin telescop",
+        "timp":"noapte"
+    },   
+    {
+        "cale_relativa":"6.jpg",
+        "nume":"planete",
+        "descriere":"Jupiter, Saturn, Uranus, Neptun",
+        "timp":"noapte"
+    },   
+    {
+        "cale_relativa":"7.jpg",
+        "nume":"M1",
+        "descriere":"Nebuloasa Crabului",
+        "timp":"noapte"
+    },   
+    {
+        "cale_relativa":"9.jpg",
+        "nume":"Ring Nebula",
+        "descriere":"Nebuloasa M57",
+        "timp":"noapte"
+    },   
+    {
+        "cale_relativa":"8.jpg",
+        "nume":"Roi globular",
+        "descriere":"Clusterul Hercule M13",
+        "timp":"noapte"
+    } ,  
+    {
+        "cale_relativa":"10.jpg",
+        "nume":"Venus",
+        "descriere":"fazele lui Venus",
+        "timp":"noapte"
+    } ,  
+    {
+        "cale_relativa":"11.jpg",
+        "nume":"pregatiri astronomice",
+        "descriere":"evenimente pentru pasionatii de astronomie",
+        "timp":"zi"
+    },   
+    {
+        "cale_relativa":"12.jpg",
+        "nume":"telescop incepatori",
+        "descriere":"telescop refractor portabil",
+        "timp":"zi"
+    }  , 
+    {
+        "cale_relativa":"13.jpg",
+        "nume":"telescop reflector",
+        "descriere":"telescop intermediari cu diametrul aperturii redus",
+        "timp":"zi"
+    } ,  
+    {
+        "cale_relativa":"14.jpg",
+        "nume":"telescop solar",
+        "descriere":"telescop cu filtru pentru Soare",
+        "timp":"zi"
+    },   
+    {
+        "cale_relativa":"15.jpg",
+        "nume":"Luna",
+        "descriere":"Luna noua dimineata",
+        "timp":"dimineata"
+    },   
+    {
+        "cale_relativa":"16.jpg",
+        "nume":"Soarele",
+        "descriere":"explozii solare prin telescop",
+        "timp":"zi"
+    } ,  
+    {
+        "cale_relativa":"17.jpg",
+        "nume":"eclipsa",
+        "descriere":"eclipsa solara partiala",
+        "timp":"dimineata"
+    } ,  
+    {
+        "cale_relativa":"18.jpg",
+        "nume":"telescop montura ecuatoriala",
+        "descriere":"telescop potrivit pentru multe tipuri de observatii",
+        "timp":"dimineata"
+    } ,  
+    {
+        "cale_relativa":"19.jpg",
+        "nume":"cautator",
+        "descriere":"alinierea telescopului si a cautatorului",
+        "timp":"zi"
+    } ,  
+    {
+        "cale_relativa":"20.jpg",
+        "nume":"dupa o noapte de observatii",
+        "descriere":"telescoape intr-un mediu fara lumina artificiala",
+        "timp":"dimineata"
+    }   ,
+    {
+        "cale_relativa":"21.jpg",
+        "nume":"crepusculul",
+        "descriere":"telescop si Luna",
+        "timp":"dimineata"
+    } ,  
+    {
+        "cale_relativa":"22.jpg",
+        "nume":"telescop montura alt-azimutala",
+        "descriere":"telescop cu montura alt-azimutala dimineata",
+        "timp":"dimineata"
+    }           
+    ]
+}

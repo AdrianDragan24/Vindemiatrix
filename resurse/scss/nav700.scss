@@ -1,0 +1,57 @@
+nav
+{
+    #ch-meniu:checked+ul.meniu
+    {
+        display: block;
+        animation: aparitie;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+    }    
+    #hamburger
+    {
+        display: block;
+        img
+        {
+            height: 2rem;
+        }
+    }
+    ul.meniu
+    {
+        display: none;
+        position: absolute;
+        width: 100%;
+        li
+        {
+            div, a
+            {
+                height: 100%;
+            }
+            --latime_buton: 100%;
+            line-height: var(--inaltime_buton);
+            &:hover div.op::after
+            {
+                display: none;
+            }
+        }
+        > li:hover > a, > li:hover div
+        {
+            color: white;
+            background-color: var(--culoare_inchisa);;
+        }
+    }
+
+}
+@keyframes aparitie{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+        rotate: -90deg;
+    }
+    100%{
+        rotate: 0;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

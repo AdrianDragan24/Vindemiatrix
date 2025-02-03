@@ -1,0 +1,107 @@
+nav 
+{
+    --latime_buton: 220px;
+    --linie: 240px;
+    --inaltime_buton: 28px;
+    --culoare_inchisa: rgb(0, 13, 128);
+    --culoare_deschisa: rgb(0, 255, 221);
+    background-color: var(--culoare_deschisa);
+    #hamburger, #ch-meniu 
+    {
+        display: none;
+    }
+    ul.meniu 
+    {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+        ul 
+        {
+            display: none;
+            padding: 0;
+            list-style-type: none;
+            z-index: 3;
+            position: relative;
+            margin-left: -1px;
+            animation-name: afisare_submeniu;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            transform-origin: 50% 0%;
+        }
+        div.icon 
+        {
+            display: none;
+        }
+        li 
+        {
+            border: 1px solid var(--culoare_inchisa);
+            background-color: var(--culoare_deschisa);
+            width: var(--latime_buton);
+            height: var(--inaltime_buton);
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.4s linear;
+            box-sizing: border-box;
+            div, a
+            {
+                text-decoration: none;
+                color: black;
+                display: block;
+                width: 100%;
+                cursor: pointer;
+                transition: all 0.4s linear;
+            }
+            li:hover 
+            {
+                background-color: var(--culoare_inchisa);
+                a
+                {
+                    color: white;
+                }
+            }
+            &:hover
+            {
+                div.op::after
+                {
+                    content: " ";
+                    width: var(--linie);
+                    height: 5px;
+                    background-color: var(--culoare_deschisa);
+                    animation: gradient;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    animation-timing-function: linear;
+                }
+                div.op
+                {
+                    display: flex;
+                    flex-direction: column;
+                }
+                ul
+                {
+                    display: block;
+                }
+            }   
+        }
+    }
+} 
+  @keyframes afisare_submeniu {
+    0% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes gradient{
+    100%{
+      background: linear-gradient(to right, var(--culoare_deschisa) 0%, var(--culoare_inchisa) 100%);
+    }
+  }
+  
