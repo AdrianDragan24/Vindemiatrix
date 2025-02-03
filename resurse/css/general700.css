@@ -29,3 +29,6 @@ body{
     scrollbar-color: var(--culoare5) var(--culoare3);
     scrollbar-width: thin;
 }
+
+#date_site{
+    column-count: 1;}

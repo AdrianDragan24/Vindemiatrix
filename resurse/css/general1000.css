@@ -50,3 +50,6 @@ body{
     grid-column: 2 / span 2;
 }
 
+
+#date_site{
+    column-count: 1;}
